@@ -1,0 +1,240 @@
+2025-01-30 20:53:11,072 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\deployments
+2025-01-30 20:53:11,079 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "AppTodoOf.war" (runtime-name: "AppTodoOf.war")
+2025-01-30 20:53:11,082 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-01-30 20:53:11,132 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-01-30 20:53:11,135 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2025-01-30 20:53:12,454 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for meuPu
+2025-01-30 20:53:12,563 INFO  [org.jipijapa] (MSC service thread 1-1) JIPIORMV53020253: Second level cache enabled for AppTodoOf.war#meuPu
+2025-01-30 20:53:12,803 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV53020253: Second level cache enabled for AppTodoOf.war#meuPu
+2025-01-30 20:53:12,849 WARN  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0013: Deployment AppTodoOf.war contains Jakarta Contexts and Dependency Injection annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+2025-01-30 20:53:12,928 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2025-01-30 20:53:12,953 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'AppTodoOf.war#meuPu'
+2025-01-30 20:53:12,957 INFO  [org.infinispan.CONFIG] (MSC service thread 1-7) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-30 20:53:12,959 INFO  [org.infinispan.CONFIG] (MSC service thread 1-7) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-30 20:53:12,970 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: meuPu
+	...]
+2025-01-30 20:53:12,992 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2025-01-30 20:53:13,019 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.24.Final}
+2025-01-30 20:53:13,021 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2025-01-30 20:53:13,050 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2025-01-30 20:53:13,070 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2025-01-30 20:53:13,139 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2025-01-30 20:53:13,220 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'AppTodoOf.war#meuPu'
+2025-01-30 20:53:13,355 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-01-30 20:53:13,395 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2025-01-30 20:53:13,653 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 78) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2025-01-30 20:53:13,710 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 78) HV000001: Hibernate Validator 6.0.22.Final
+2025-01-30 20:53:14,032 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2025-01-30 20:53:14,032 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2025-01-30 20:53:14,032 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Todo (
+2025-01-30 20:53:14,032 INFO  [stdout] (ServerService Thread Pool -- 78)        id_todos integer not null auto_increment,
+2025-01-30 20:53:14,032 INFO  [stdout] (ServerService Thread Pool -- 78)         taskName varchar(255),
+2025-01-30 20:53:14,033 INFO  [stdout] (ServerService Thread Pool -- 78)         user_id integer,
+2025-01-30 20:53:14,033 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id_todos)
+2025-01-30 20:53:14,033 INFO  [stdout] (ServerService Thread Pool -- 78)     ) engine=InnoDB
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Users (
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)        id_user integer not null auto_increment,
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)         email_user varchar(255),
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)         name_user varchar(255),
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)         password_user varchar(255),
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id_user)
+2025-01-30 20:53:14,042 INFO  [stdout] (ServerService Thread Pool -- 78)     ) engine=InnoDB
+2025-01-30 20:53:14,092 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/AppTodoOf' for server 'default-server'
+2025-01-30 20:53:14,147 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "AppTodoOf.war" (runtime-name : "AppTodoOf.war")
+2025-01-30 20:53:14,178 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-01-30 20:53:14,181 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 26.0.0.Final (WildFly Core 18.0.0.Final) started in 5745ms - Started 420 of 603 services (341 services are lazy, passive or on-demand)
+2025-01-30 20:53:14,183 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-01-30 20:53:14,183 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-01-30 21:47:27,842 INFO  [org.jboss.modules] (main) JBoss Modules version 2.0.0.Final
+2025-01-30 21:47:28,309 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+2025-01-30 21:47:28,321 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-01-30 21:47:28,446 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 26.0.0.Final (WildFly Core 18.0.0.Final) starting
+2025-01-30 21:47:28,447 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre
+	java.io.tmpdir = C:\Users\Kolone\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:/Users/Kolone/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin/server;C:/Users/Kolone/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Windows\system32;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_432-b06
+	java.specification.maintenance.version = 6
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Azul Systems, Inc.
+	java.vendor.url = http://www.azul.com/
+	java.vendor.url.bug = http://www.azul.com/support/
+	java.version = 1.8.0_432
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Azul Systems, Inc.
+	java.vm.version = 25.432-b06
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final
+	jboss.host.name = desktop-5h816i7
+	jboss.modules.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = desktop-5h816i7
+	jboss.qualified.host.name = desktop-5h816i7
+	jboss.server.base.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone
+	jboss.server.config.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\log
+	jboss.server.name = desktop-5h816i7
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\tmp
+	jdk.vendor.version = Zulu 8.82.0.21-CA-win64
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 24+
+	stderr.encoding = UTF-8
+	stdout.encoding = UTF-8
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\resources.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\rt.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\sunrsasign.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\jsse.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\jce.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\charsets.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\jfr.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\lib\cat.jar;C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\zulu8.82.0.21-ca-jdk8.0.432-win_x64\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\bin
+	user.home = C:\Users\Kolone
+	user.language = pt
+	user.name = Kolone
+	user.script = 
+	user.timezone = America/Sao_Paulo
+	user.variant = 
+2025-01-30 21:47:28,447 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 24+ -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\Kolone\Downloads\wildfly-26.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 
+2025-01-30 21:47:29,097 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.18.1.Final
+2025-01-30 21:47:29,598 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found AppTodoOf.war in deployment directory. To trigger deployment create a file called AppTodoOf.war.dodeploy
+2025-01-30 21:47:29,655 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-01-30 21:47:29,672 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.5.Final
+2025-01-30 21:47:29,678 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.5.Final
+2025-01-30 21:47:29,715 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-01-30 21:47:29,719 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-01-30 21:47:29,720 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-01-30 21:47:29,733 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2025-01-30 21:47:29,741 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 4.7.4.Final
+2025-01-30 21:47:29,741 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-01-30 21:47:29,743 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-01-30 21:47:29,744 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-01-30 21:47:29,747 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-01-30 21:47:29,748 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-01-30 21:47:29,769 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.3.Final)
+2025-01-30 21:47:29,771 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-01-30 21:47:29,772 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-01-30 21:47:29,789 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.14.Final starting
+2025-01-30 21:47:29,823 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2025-01-30 21:47:29,824 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2025-01-30 21:47:29,829 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-01-30 21:47:29,830 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-01-30 21:47:29,898 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file 'C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\configuration\application.keystore' does not exist. Used blank.
+2025-01-30 21:47:29,917 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2025-01-30 21:47:29,924 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'C:\Users\Kolone\Downloads\wildfly-26.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-01-30 21:47:30,104 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-01-30 21:47:30,110 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-01-30 21:47:30,111 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-01-30 21:47:30,132 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2025-01-30 21:47:30,133 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2025-01-30 21:47:30,135 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2025-01-30 21:47:30,135 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.23.Final
+2025-01-30 21:47:30,189 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-01-30 21:47:30,197 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-01-30 21:47:30,386 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-01-30 21:47:30,450 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-01-30 21:47:30,455 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2025-01-30 21:47:30,456 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Kolone\Downloads\wildfly-26.0.0.Final\standalone\deployments
+2025-01-30 21:47:30,464 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "AppTodoOf.war" (runtime-name: "AppTodoOf.war")
+2025-01-30 21:47:30,549 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.5) 
+2025-01-30 21:47:31,867 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for meuPu
+2025-01-30 21:47:31,970 INFO  [org.jipijapa] (MSC service thread 1-2) JIPIORMV53020253: Second level cache enabled for AppTodoOf.war#meuPu
+2025-01-30 21:47:32,078 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment AppTodoOf.war
+2025-01-30 21:47:32,194 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 6.0.22.Final
+2025-01-30 21:47:32,329 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'sas' in deployment unit 'deployment "AppTodoOf.war"' are as follows:
+
+	java:global/AppTodoOf/sas!ejb.sas
+	java:app/AppTodoOf/sas!ejb.sas
+	java:module/sas!ejb.sas
+	java:global/AppTodoOf/sas
+	java:app/AppTodoOf/sas
+	java:module/sas
+
+2025-01-30 21:47:32,367 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+2025-01-30 21:47:32,411 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'AppTodoOf.war#meuPu'
+2025-01-30 21:47:32,434 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: meuPu
+	...]
+2025-01-30 21:47:32,493 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-1) No shutdown hook registered: Please call close() manually on application shutdown.
+2025-01-30 21:47:32,496 INFO  [org.wildfly.microprofile.opentracing.smallrye] (MSC service thread 1-1) WFLYTRAC0001: Tracer initialized: JaegerTracer(version=Java-1.6.0, serviceName=AppTodoOf.war, reporter=RemoteReporter(sender=org.wildfly.extension.microprofile.opentracing.spi.sender.WildFlySender@557c6ccf, closeEnqueueTimeout=1000), sampler=ConstSampler(decision=true, tags={sampler.type=const, sampler.param=true}), tags={hostname=DESKTOP-5H816I7, jaeger.version=Java-1.6.0, ip=192.168.68.109}, zipkinSharedRpcSpan=false, expandExceptionLogs=false, useTraceId128Bit=false)
+2025-01-30 21:47:32,530 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.24.Final}
+2025-01-30 21:47:32,532 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2025-01-30 21:47:32,535 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-30 21:47:32,539 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2025-01-30 21:47:32,597 INFO  [org.jipijapa] (MSC service thread 1-5) JIPIORMV53020253: Second level cache enabled for AppTodoOf.war#meuPu
+2025-01-30 21:47:32,602 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2025-01-30 21:47:32,653 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.8 (Final)
+2025-01-30 21:47:32,701 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 79) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+2025-01-30 21:47:32,735 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2025-01-30 21:47:32,770 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2025-01-30 21:47:32,885 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'AppTodoOf.war#meuPu'
+2025-01-30 21:47:33,170 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-01-30 21:47:33,219 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2025-01-30 21:47:33,711 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2025-01-30 21:47:33,711 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2025-01-30 21:47:33,711 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Todo (
+2025-01-30 21:47:33,712 INFO  [stdout] (ServerService Thread Pool -- 78)        id_todos integer not null auto_increment,
+2025-01-30 21:47:33,712 INFO  [stdout] (ServerService Thread Pool -- 78)         taskName varchar(255),
+2025-01-30 21:47:33,712 INFO  [stdout] (ServerService Thread Pool -- 78)         user_id integer,
+2025-01-30 21:47:33,712 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id_todos)
+2025-01-30 21:47:33,712 INFO  [stdout] (ServerService Thread Pool -- 78)     ) engine=InnoDB
+2025-01-30 21:47:33,721 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Users (
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)        id_user integer not null auto_increment,
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)         email_user varchar(255),
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)         name_user varchar(255),
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)         password_user varchar(255),
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id_user)
+2025-01-30 21:47:33,722 INFO  [stdout] (ServerService Thread Pool -- 78)     ) engine=InnoDB
+2025-01-30 21:47:34,107 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/AppTodoOf' for server 'default-server'
+2025-01-30 21:47:34,171 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "AppTodoOf.war" (runtime-name : "AppTodoOf.war")
+2025-01-30 21:47:34,214 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-01-30 21:47:34,216 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 26.0.0.Final (WildFly Core 18.0.0.Final) started in 6692ms - Started 463 of 643 services (341 services are lazy, passive or on-demand)
+2025-01-30 21:47:34,219 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-01-30 21:47:34,220 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
